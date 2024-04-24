@@ -3,7 +3,7 @@ function fadeIn() {
     element.classList.remove("hidden");
     element.classList.add("visible");
 }
-//asd
+
 function makeVisible() {
     const element = document.getElementById("transition");
     element.classList.remove("hidden");
