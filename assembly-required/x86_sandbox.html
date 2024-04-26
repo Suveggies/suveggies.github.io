@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Assembly Required - x86 Assembly</title>
+<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <ul class="navul">
+        <li class="navli"><a href="./index.html">Home</a></li>
+        <li class="navli"><a href="./x86_sandbox.html">x86 Assembly - Sandbox</a></li>
+        <li class="navli"><a href="./basic_selector.html">x86 Assembly - Basics</a></li>
+    </ul>
+
+    <div id="editor">
+        function foo(items) {
+            var x = "All this is syntax highlighted";
+            return x;
+        }
+    </div>
+    
+    <div class="sandbox">
+        <h1>Welcome!</h1>
+        <p>This is an interactive sandbox to practice your skills with x86 Assembly</p>
+    </div>
+
+    <script src="./ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/dracula");
+        editor.session.setMode("ace/mode/assembly_x86");
+        editor.setValue("org  0x100\nmov  dx, msg\nmov  ah, 9\nint  0x21\nmov  ah, 0x4c\nint  0x21\nmsg  db 'Hello, World!', 0x0d, 0x0a, '$'", -1);
+        editor.setShowPrintMargin(false);
+    </script>
+</body>
+</html>
