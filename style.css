@@ -1,9 +1,15 @@
+* {
+    text-align: center;
+}
+
 body {
     background-color: black;
 }
 
 .content {
-    text-align: center;
     color: green;
+}
+
+.link {
     text-decoration: none;
 }
