@@ -3,6 +3,7 @@ body {
 }
 
 .content {
-    justify-content: center;
+    text-align: center;
     color: green;
+    text-decoration: none;
 }
