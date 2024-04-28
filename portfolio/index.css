@@ -8,9 +8,7 @@ body {
 }
 
 a {
-    color: #f44336;
     text-decoration: none;
-    text-shadow: 0 0 15px #b43329;
 }
 
 .banner{
@@ -33,10 +31,6 @@ a {
     font-size: 3px;
 }
 
-a:hover {
-    font-size: 110%;
-}
-
 .visible_no_trans {
     visibility: visible;
     opacity: 1;
@@ -54,25 +48,41 @@ a:hover {
     transition: visibility 0s 2s, opacity 2s linear;
 }
 
-.collapsible {
-    background-color: #363636;
-    color: #17b22b;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-}
-
-.active, .collapsible:hover {
-    background-color: #1f1f1f;
-}
-
 .content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
     background-color: #1f1f1f;
 }
+
+.navul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: #111;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    border-style: none none solid none;
+    border-color: rgb(38, 38, 38);
+  }
+  
+  .navli {
+    float: left;
+  }
+  
+  .navli a {
+    display: block;
+    color: #17b22b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-shadow: 0 0 15px #0f711b;
+  }
+  
+  .navli a:hover {
+    background-color: rgb(38, 38, 38);
+  }
