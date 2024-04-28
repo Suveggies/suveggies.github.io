@@ -51,4 +51,10 @@ background-color: rgb(38, 38, 38);
     border-style: solid;
     border-color: rgb(38, 38, 38);
     width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin: auto;
 }
