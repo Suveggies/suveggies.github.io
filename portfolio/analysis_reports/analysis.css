@@ -10,6 +10,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #17b22b;
 }
 
 .navul {
@@ -48,11 +49,14 @@ background-color: rgb(38, 38, 38);
     text-align: center;
     border-style: solid;
     border-color: rgb(38, 38, 38);
-    width: 510px;
+    width: 460px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 4px;
     margin: auto;
+    float: left;
+    padding-bottom: 10px;
 }
