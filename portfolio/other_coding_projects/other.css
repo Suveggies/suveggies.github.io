@@ -1,0 +1,44 @@
+body {
+    background: #111;
+    color: #17b22b;
+    font-family: Consolas, Courier, monospace;
+    font-size: 16px;
+    text-shadow: 0 0 15px #0f711b;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: #111;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    border-style: none none solid none;
+    border-color: rgb(38, 38, 38);
+}
+  
+.navli {
+float: left;
+}
+
+.navli a {
+display: block;
+color: #17b22b;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+text-shadow: 0 0 15px #0f711b;
+}
+
+.navli a:hover {
+background-color: rgb(38, 38, 38);
+}
