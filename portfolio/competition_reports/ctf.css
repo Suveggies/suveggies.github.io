@@ -15,16 +15,6 @@ a {
     color: #17b22b;
 }
 
-.section {
-    margin-left: 4%;
-}
-
-.large-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .navul {
     list-style-type: none;
     overflow: hidden;
@@ -71,4 +61,11 @@ background-color: rgb(38, 38, 38);
     margin: auto;
     float: left;
     padding-bottom: 10px;
+}
+
+
+.large-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
