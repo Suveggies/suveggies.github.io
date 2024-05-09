@@ -275,27 +275,14 @@ button2.addEventListener('click', onButton2Click);
 
 var url = new URL("http://localhost:8000/Desktop/AssemblyRequired/basics.html?index=0");
 
-function sanitize(string) {
-    const map = {
-        '&': '&amp;',
-        '<': '&lt;',
-        '>': '&gt;',
-        '"': '&quot;',
-        "'": '&#x27;',
-        "/": '&#x2F;',
-    };
-    const reg = /[&<>"'/]/ig;
-    return string.replace(reg, (match)=>(map[match]));
-  }
-
 function loadText(startIndex) {
-    textElement.innerHTML = sanitize(text[startIndex]);
+    textElement.innerText = text[startIndex];
 }
 
 function onButton1Click() {
     if(index < text.length-1){
         index++;
-        textElement.innerHTML = sanitize(text[index]);
+        textElement.innerText = text[index];
         url.searchParams.set('index', index);
         window.history.replaceState({}, '', url);
     }
@@ -304,7 +291,7 @@ function onButton1Click() {
 function onButton2Click() {
     if(index > 0 ){
         index--;
-        textElement.innerHTML = sanitize(text[index]);
+        textElement.innerText = text[index];
         url.searchParams.set('index', index);
         window.history.replaceState({}, '', url);
     }
