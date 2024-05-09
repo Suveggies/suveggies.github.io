@@ -6,9 +6,16 @@ const { exec } = require('child_process');
 const app = express();
 const PORT = 3000;
 
+app.disable('x-powered-by');
 app.use(bodyParser.text());
 
-app.post('/run-assembly', (req, res) => {
+const limit = require("express-limit").limit;
+
+app.post('/run-assembly', 
+    limit({
+        max: 5, // 5 requests
+        period: 60 * 1000, // per minute (60 seconds)
+    }), (req, res) => {
     const assemblyCode = req.body;
 
     // Compile assembly code
